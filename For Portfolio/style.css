@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+.main_part{
+    /* border: 1px solid; */
+    width: 99.8.9%;
+    height: 650px;
+    background: url(Main_ph.jpg);
+    background-size: cover;
+}
+.nav_bar{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.nav_bar_input{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_bar_input input{
+    border: 1px solid white;
+    width: 200px;
+    height: 30px;
+    background: none;
+    color: white;
+    padding: 0 10px;
+}
+.nav_bar_manu {
+    /* border: 1px solid; */
+    width: 50%;
+    background-color: none;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #ff9800;
+  }
+.main_text{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.main_text p{
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "Yuji Mai", serif;
+    margin: 0 20px;
+}
+.main_text h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.div_for_main_buttons{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_for_main_buttons button{
+    width: 350px;
+    height: 40px;
+    margin: 0 30px;
+    border-radius: 30px;
+}
+.b_1{
+    border: 1px solid rgb(20, 202, 80);
+    background-color: rgb(20, 202, 80);
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.b_2{
+    border: 1px solid wheat;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+}
+.b_1:hover{
+    background-color: rgb(17, 173, 69); 
+}
+.b_2:hover{
+    background-color: rgb(60,120,190);
+    color: aliceblue;
+}
+.main_2{
+    border: 1px solid;
+    width: 100%;
+    height: 90vh;
+}
+  /* =-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+  /* =-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+  /* =-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none; 
+      flex-direction: column;
+      background-color: #9a643a;
+      position: absolute;
+      top: 80px;
+      right: 10px;
+      width: 200px;
+      padding:0px 0;
+      border-radius: 5px;
+    }
+  
+    .menu li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu.open {
+      display: flex; 
+    }
+  }
+@media (min-width: 0px) and (max-width:480px){
+    .main_text p{
+        margin: 0 10px;
+        font-size: 12px;
+        color: aliceblue;
+        font-family: "Yuji Mai", serif;
+    }
+    .main_text h1{
+        font-size: 25px;
+    }
+    .div_for_main_buttons{
+        /* border: 1px solid; */
+        width: 100%;
+        height: 200px;
+        display: block;
+    }
+    .div_for_main_buttons button{
+        width: 200px;
+        height: 40px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+}
